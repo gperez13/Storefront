@@ -14,25 +14,53 @@ import Item from './Item/Item.js';
 import Cart from './Cart/Cart.js';
 
 class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      isDisplayed: true
+    }
+  }
+
+
+
+  hideDisplay = () =>{
+    const state = this.state;
+    state.isDisplayed = false
+    this.setState(state);
+  }
+
+  showDisplay = () =>{
+    const state = this.state;
+    state.isDisplayed = true;
+    this.setState(state);
+  }
+
+
+
+
+
+
+
   render() {
     return (
       <div className="App">
         <Router>
-        <div>
-          <Header/>
+          <div>
+            <Header/>
 
-          <Route path="/home"  component={Home}/>
-          <Route path="/alllistings"  component={AllListings}/>
-          <Route path="/item"  component={Item}/>
-          <Route path="/cart"  component={Cart}/>
-
-
+            <Route path="/home"  component={Home}/>
+            <Route path="/alllistings"  component={AllListings}/>
+            <Route path="/item"  component={Item}/>
+            <Route path="/cart"  component={Cart}/>
 
 
 
-          <Footer/>
-        </div>
-      </Router>
+
+
+            <Footer/>
+          </div>
+         </Router>
 
 
 
