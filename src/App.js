@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link
+} from 'react-router-dom';
 import './App.css';
 import AllListings from './AllListings/AllListings.js';
 import Footer from './Footer/Footer.js';
@@ -12,13 +17,24 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
-      <Header/>
-      <Home/>
-      <AllListings/>
-      <Item/>
-      <Cart/>
-      <Footer/>
+        <Router>
+        <div>
+          <Header/>
+
+          <Route path="/home"  component={Home}/>
+          <Route path="/alllistings"  component={AllListings}/>
+          <Route path="/item"  component={Item}/>
+          <Route path="/cart"  component={Cart}/>
+
+
+
+
+
+          <Footer/>
+        </div>
+      </Router>
+
+
 
 
 
