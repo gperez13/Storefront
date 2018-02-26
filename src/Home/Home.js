@@ -7,6 +7,17 @@ import Carrousel from '../Carrousel/Carrousel.js';
 
 class Home extends Component{
 
+	constructor(props) {
+		super(props);
+
+	}
+
+
+	handleDisplay= (e) =>{
+		
+		console.log(this.props);
+	}
+
 	render(){
 
 
@@ -18,7 +29,8 @@ class Home extends Component{
 
 					<Carrousel/>
 					<p>Featured Items up in hurrr!!!</p>
-	
+						
+					<button onClick={this.props.display}>Display</button>
 				
 
 

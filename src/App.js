@@ -26,11 +26,12 @@ class App extends Component {
 
   hideDisplay = () =>{
     const state = this.state;
-    state.isDisplayed = false
+    state.isDisplayed = false;
+    console.log('Hi Gio!!!!')
     this.setState(state);
   }
 
-  showDisplay = () =>{
+  showDisplay = (e) =>{
     const state = this.state;
     state.isDisplayed = true;
     this.setState(state);
@@ -49,7 +50,7 @@ class App extends Component {
           <div>
             <Header/>
 
-            <Route path="/home"  component={Home}/>
+            <Route path="/home"  render={(props) => <Home {...props} display={this.hideDisplay} />} />
             <Route path="/alllistings"  component={AllListings}/>
             <Route path="/item"  component={Item}/>
             <Route path="/cart"  component={Cart}/>
