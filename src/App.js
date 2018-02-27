@@ -18,7 +18,9 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      isDisplayed: true
+      isDisplayed: true,
+      recs: ['Peanut Butter Wafers', 'Hair Pomade', 'Rancillio Grinder', 'Guitar Pick Set', 'Rubber Gloves', 'Tweezers'],
+      inventory: ['Blood Orange Wax', 'Bacon Scented Cellophane', 'Black Styrephoam Scrub', 'Bottled Peach Ambar', 'Yiddish Muffin']
     }
   }
 
@@ -50,10 +52,10 @@ class App extends Component {
           <div>
             <Header/>
 
-            <Route path="/home"  render={(props) => <Home {...props} display={this.hideDisplay} />} />
-            <Route path="/alllistings"  component={AllListings}/>
-            <Route path="/item"  component={Item}/>
-            <Route path="/cart"  component={Cart}/>
+            <Route path="/home"  render={(props) => <Home {...props} display={this.hideDisplay} recommendations={this.recs}/>} />
+            <Route path="/alllistings"  render={(props) => <AllListings {...props} invent={this.state.inventory} />} />
+            <Route path="/item"  render={(props) => <Item {...props} recommendations={this.recs} invent={this.inventory}/>}/>} />
+            <Route path="/cart"  render={(props) => <Cart {...props} display={this.hideDisplay} />} />
 
 
 

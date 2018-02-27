@@ -17,3 +17,12 @@
 p{
 	margin-bottom: 1.5rem;
 }
+
+
+.listing{
+	margin: 3rem;
+	display: inline-grid;
+}
+.listing-picture{
+	height: 15rem;
+}

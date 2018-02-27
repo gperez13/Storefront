@@ -9,6 +9,16 @@ class AllListings extends Component{
 
 	render(){
 
+		console.log(this.props.invent)
+
+		const tori = this.props.invent.map((t, i) => {
+			return (
+				<div class="listing" key={i}>
+					<img class="listing-picture" src="./walrus.png"/>
+					<h6>{t}</h6>
+				</div>
+			)
+		});
 
 
 		return(
@@ -16,16 +26,13 @@ class AllListings extends Component{
 				<div id="allListings">
 					<h3 class="header">Here are all the items!</h3>
 
-					<ul>
-						<li>Something</li>
-						<li>Wig</li>
-						<li>Sofa</li>
-						<li>Drill</li>
-						<li>Bear</li>
-						<li>Pinapple</li>
-					</ul>
+
+					<div>{tori}</div>
+
 	
-				
+			
+
+
 
 
 				</div>
