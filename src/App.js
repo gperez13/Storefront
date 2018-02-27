@@ -52,7 +52,7 @@ class App extends Component {
           <div>
             <Header/>
 
-            <Route path="/home"  render={(props) => <Home {...props} display={this.hideDisplay} recommendations={this.recs}/>} />
+            <Route path="/home"  render={(props) => <Home {...props} display={this.hideDisplay} recommendations={this.state.recs}/>} />
             <Route path="/alllistings"  render={(props) => <AllListings {...props} invent={this.state.inventory} />} />
             <Route path="/item"  render={(props) => <Item {...props} recommendations={this.recs} invent={this.inventory}/>}/>} />
             <Route path="/cart"  render={(props) => <Cart {...props} display={this.hideDisplay} />} />

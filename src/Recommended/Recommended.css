@@ -17,3 +17,12 @@
 p{
 	margin-bottom: 1.5rem;
 }
+
+
+.recs{
+	margin: 3rem;
+	display: inline-grid;
+}
+.recs-picture{
+	height: 15rem;
+}

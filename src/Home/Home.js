@@ -16,7 +16,7 @@ class Home extends Component{
 
 	handleDisplay= (e) =>{
 		
-		console.log(this.props);
+	
 	}
 
 	render(){
@@ -30,7 +30,7 @@ class Home extends Component{
 					<Carrousel/>
 					<h3 class="header">Woah, check it out!</h3>
 
-					<Recommended/>
+					<Recommended foryou={this.props.recommendations}/>
 
 					<p>Featured Items up in hurrr!!!</p>
 						
