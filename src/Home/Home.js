@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Home.css';
 import Carrousel from '../Carrousel/Carrousel.js';
+import Recommended from '../Recommended/Recommended.js';
 
 
 
@@ -25,12 +26,17 @@ class Home extends Component{
 		return(
 			<div>
 				<div id="home">
-					<h3 class="header">Woah, check it out!</h3>
 
 					<Carrousel/>
+					<h3 class="header">Woah, check it out!</h3>
+
+					<Recommended/>
+
 					<p>Featured Items up in hurrr!!!</p>
 						
 					<button onClick={this.props.display}>Display</button>
+
+
 				
 
 

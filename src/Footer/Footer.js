@@ -20,7 +20,8 @@ class Footer extends Component{
 
 					<div class=" ">Contact</div>
 
-					
+					<img id="bottom-logo" src="./walrus.png"/>
+
 					</div>
 
 

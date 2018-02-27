@@ -18,9 +18,20 @@
 
 
 .header{
-	font-family: "Montserrat";
+	font-family: "Raleway";
 }
 
 .content{
-	font-family: "Crimson Text";
+	font-family: "Lora";
+}
+
+
+#bottom-logo{
+	height: 3rem;
+	border: 1px solid black;
+	border-radius: 40px;
+	padding: 6px;
+	padding-top: 6px;
+	background-color: white;
+
 }

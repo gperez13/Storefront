@@ -31,7 +31,7 @@ class App extends Component {
     this.setState(state);
   }
 
-  showDisplay = (e) =>{
+  showDisplay = () =>{
     const state = this.state;
     state.isDisplayed = true;
     this.setState(state);

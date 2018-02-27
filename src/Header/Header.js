@@ -18,21 +18,51 @@ class Header extends Component{
 		return(
 			<div>
 				<div id="nav">
-					<h3 class="header">Navigation</h3>
 
-                  <Link to="/Home"><p class="smoothScroll btn btn-default">Home</p></Link>
-                  <Link to="/AllListings"><p class="smoothScroll btn btn-default">Listings</p></Link>
-                  <Link to="/Item"><p class="smoothScroll btn btn-default">Item</p></Link>
-                  <Link to="/Cart"><p class="smoothScroll btn btn-default">Cart</p></Link>
-	
-				
+						<div class="container">
+							<div class="row">
+
+								<div class="col-1">
+									<img id="nav-logo" src="./walrus.png"/>
+
+								</div>
+
+
+
+								<div class="col-1">
+									<h4 class="header">Navigation</h4>
+
+								</div>
+
+
+
+								<div class="col-10">
+
+				                  <Link to="/Home"><p class="smoothScroll btn btn-default link">Home</p></Link>
+				                  <Link to="/AllListings"><p class="smoothScroll btn btn-default link">Listings</p></Link>
+				                  <Link to="/Item"><p class="smoothScroll btn btn-default link">Item</p></Link>
+				                  <Link to="/Cart"><p class="smoothScroll btn btn-default link">Cart</p></Link>
+
+								</div>
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+							</div>
+						</div>
 
 
 				</div>
-
-
-
-
 			</div>
 
 			)

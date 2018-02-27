@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom';
+import { Carousel } from 'react-responsive-carousel';
 import './Carrousel.css';
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 
 
@@ -13,9 +17,21 @@ class Carrousel extends Component{
 		return(
 			<div>
 				<div id="carrousel">
-					<h3 class="header">Here are all the items!</h3>
-
-					<p>ROund and Round!!!</p>
+					
+						<Carousel>
+			                <div>
+			                    <img src="./puppy1.jpg" />
+			                    <p className="legend">Legend 1</p>
+			                </div>
+			                <div>
+			                    <img src="./puppy2.jpg" />
+			                    <p className="legend">Legend 2</p>
+			                </div>
+			                <div>
+			                    <img src="./puppy3.jpg" />
+			                    <p className="legend">Legend 3</p>
+			                </div>
+			            </Carousel>
 	
 				
 
