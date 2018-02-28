@@ -32,10 +32,6 @@ class Home extends Component{
 
 					<Recommended foryou={this.props.recommendations}/>
 
-					<p>Featured Items up in hurrr!!!</p>
-						
-					<button onClick={this.props.display}>Display</button>
-
 
 				
 

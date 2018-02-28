@@ -31,8 +31,7 @@ p{
 }
 
 .link:hover{
-	border-bottom: 2px solid black;
-	border-radius: 0;
+	color: blue;
 	transition: 0.5s;
 
 }

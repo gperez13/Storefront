@@ -21,15 +21,15 @@ class Carrousel extends Component{
 						<Carousel>
 			                <div>
 			                    <img src="./puppy1.jpg" />
-			                    <p className="legend">Legend 1</p>
+			                    
 			                </div>
 			                <div>
 			                    <img src="./puppy2.jpg" />
-			                    <p className="legend">Legend 2</p>
+			                    
 			                </div>
 			                <div>
 			                    <img src="./puppy3.jpg" />
-			                    <p className="legend">Legend 3</p>
+			                    
 			                </div>
 			            </Carousel>
 	
