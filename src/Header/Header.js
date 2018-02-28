@@ -42,6 +42,8 @@ class Header extends Component{
 				                  <Link to="/AllListings"><p class="smoothScroll btn btn-default link">Listings</p></Link>
 				                  <Link to="/Item"><p class="smoothScroll btn btn-default link">Item</p></Link>
 				                  <Link to="/Cart"><p class="smoothScroll btn btn-default link">Cart</p></Link>
+				                  <Link to="/Test"><p class="smoothScroll btn btn-default link">Test</p></Link>
+				                  
 
 								</div>
 								

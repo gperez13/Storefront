@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import './Cart.css';
+import './Test.css';
 
 
-class Cart extends Component{
+class Test extends Component{
 
 	render(){
 
@@ -10,7 +10,7 @@ class Cart extends Component{
 
 		return(
 			<div>
-				<div id="cart">
+				<div id="test">
 					<h3 class="header">Shopping Cart</h3>
 						<br/>
 
@@ -44,4 +44,4 @@ class Cart extends Component{
 
 
 
-export default Cart;
+export default Test;

@@ -12,6 +12,7 @@ import Header from './Header/Header.js';
 import Home from './Home/Home.js';
 import Item from './Item/Item.js';
 import Cart from './Cart/Cart.js';
+import Test from './Test/Test.js';
 
 class App extends Component {
 
@@ -20,7 +21,8 @@ class App extends Component {
     this.state = {
       isDisplayed: true,
       recs: ['Peanut Butter Wafers', 'Hair Pomade', 'Rancillio Grinder', 'Guitar Pick Set', 'Rubber Gloves', 'Tweezers'],
-      inventory: ['Blood Orange Wax', 'Bacon Scented Cellophane', 'Black Styrephoam Scrub', 'Bottled Peach Ambar', 'Yiddish Muffin']
+      inventory: ['Blood Orange Wax', 'Bacon Scented Cellophane', 'Black Styrephoam Scrub', 'Bottled Peach Ambar', 'Yiddish Muffin'],
+      cart: []
     }
   }
 
@@ -45,6 +47,8 @@ class App extends Component {
 
 
 
+
+
   render() {
     return (
       <div className="App">
@@ -55,7 +59,8 @@ class App extends Component {
             <Route path="/home"  render={(props) => <Home {...props} display={this.hideDisplay} recommendations={this.state.recs}/>} />
             <Route path="/alllistings"  render={(props) => <AllListings {...props} invent={this.state.inventory} />} />
             <Route path="/item"  render={(props) => <Item {...props} recommendations={this.recs} invent={this.inventory}/>}/>} />
-            <Route path="/cart"  render={(props) => <Cart {...props} display={this.hideDisplay} />} />
+            <Route path="/cart"  render={(props) => <Cart {...props} recommendations={this.recs} invent={this.inventory}/>}/>} />
+            <Route path="/test"  render={(props) => <Test {...props} recommendations={this.recs} invent={this.inventory}/>}/>} />
 
 
 
