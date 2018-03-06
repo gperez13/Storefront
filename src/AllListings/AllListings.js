@@ -9,7 +9,23 @@ class AllListings extends Component{
 
 	render(){
 
-	
+		
+		console.log(this.props.test.data);
+
+		const babs = this.props.test.data.map((f,i) => {
+			return (
+				<div class="listing row" key={i}>
+					<div class="col-6">
+						<img class="listing-picture" src="./walrus.png"/>
+						<h6>{f.name}</h6>
+					</div>
+
+					
+
+				</div>
+			)
+
+		});
 
 		const tori = this.props.invent.map((t, i) => {
 			return (
@@ -28,6 +44,12 @@ class AllListings extends Component{
 
 
 					<div>{tori}</div>
+
+					<div class="container">
+						<div>{babs}</div>
+					</div>
+
+
 
 	
 			

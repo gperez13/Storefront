@@ -32,7 +32,6 @@ class App extends Component {
     .then(data=>{
       const state = this.state;
       state.items = data;
-      console.log(data)
       this.setState(state);
     })
   
@@ -69,7 +68,7 @@ class App extends Component {
             <Header/>
 
             <Route path="/home"  render={(props) => <Home {...props} display={this.hideDisplay} recommendations={this.state.recs}/>} />
-            <Route path="/alllistings"  render={(props) => <AllListings {...props} invent={this.state.inventory} />} />
+            <Route path="/alllistings"  render={(props) => <AllListings {...props} invent={this.state.inventory} test={this.state.items}/>} />
             <Route path="/item"  render={(props) => <Item {...props} recommendations={this.recs} invent={this.inventory}/>} />
             <Route path="/cart"  render={(props) => <Cart {...props} recommendations={this.recs} invent={this.inventory}/>} />
 
