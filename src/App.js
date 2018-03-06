@@ -21,8 +21,21 @@ class App extends Component {
       isDisplayed: true,
       recs: ['Peanut Butter Wafers', 'Hair Pomade', 'Rancillio Grinder', 'Guitar Pick Set', 'Rubber Gloves', 'Tweezers'],
       inventory: ['Blood Orange Wax', 'Bacon Scented Cellophane', 'Black Styrephoam Scrub', 'Bottled Peach Ambar', 'Yiddish Muffin'],
-      cart: []
+      cart: [],
+      items: []
     }
+  }
+
+  componentDidMount(){
+    fetch('http://localhost:3000/api/v1/items')
+    .then(response => response.json())
+    .then(data=>{
+      const state = this.state;
+      state.items = data;
+      console.log(data)
+      this.setState(state);
+    })
+  
   }
 
 

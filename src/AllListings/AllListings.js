@@ -9,7 +9,7 @@ class AllListings extends Component{
 
 	render(){
 
-		console.log(this.props.invent)
+	
 
 		const tori = this.props.invent.map((t, i) => {
 			return (
